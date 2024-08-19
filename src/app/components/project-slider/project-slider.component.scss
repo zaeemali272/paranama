@@ -1,0 +1,107 @@
+.projects {
+    background-color: #02020c;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+  }
+
+  .projects::-webkit-scrollbar {
+    display: none;
+  }
+
+  .projects-heading {
+    color: #f6f5f4;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  
+  @keyframes display {
+    0% {
+      transform: translateX(700px);
+      opacity: 0;
+      -webkit-transform: translateX(700px);
+      -moz-transform: translateX(700px);
+      -ms-transform: translateX(700px);
+      -o-transform: translateX(700px);
+}
+
+    5% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    28% {
+      transform: translateX(-300px);
+      opacity: 0;
+      -webkit-transform: translateX(-300px);
+      -moz-transform: translateX(-300px);
+      -ms-transform: translateX(-300px);
+      -o-transform: translateX(-300px);
+}
+    30% {
+      transform: translateX(-300px);
+      opacity: 0;
+      -webkit-transform: translateX(-300px);
+      -moz-transform: translateX(-300px);
+      -ms-transform: translateX(-300px);
+      -o-transform: translateX(-300px);
+}
+  100% {
+      transform: translateX(-700px);
+      opacity: 0;
+      -webkit-transform: translateX(-700px);
+      -moz-transform: translateX(-700px);
+      -ms-transform: translateX(-700px);
+      -o-transform: translateX(-700px);
+}
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100vw;
+    height: 600px;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel > img {
+    position: absolute;
+    width: 1000px;
+    top: 0;
+    border-radius: 20px;
+    opacity: 0;
+    animation: display 20s infinite;
+    -webkit-animation: display 20s infinite;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    img:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 5s;
+  }
+  img:nth-child(3) {
+    animation-delay: 10s;
+  }
+  img:nth-child(4) {
+    animation-delay: 15s;
+  }
+}
+  
+  
