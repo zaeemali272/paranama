@@ -262,8 +262,16 @@
 
 //skills section
 .skills {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), #03050f),
-    url("/assets/banner.jpg");
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(3, 5, 15, 0.9),
+      #03050ffe,
+      #03050f
+    ),
+    url("assets/banner.jpg");
+
+  //remove the / later
   background-attachment: fixed;
   padding: 100px;
   text-align: center;
@@ -272,7 +280,6 @@
   color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
   .heading-skills {
     font-size: 35px;
@@ -303,6 +310,27 @@
       p {
         word-wrap: break-word;
       }
+    }
+  }
+}
+
+//slider
+.slider {
+  background-color: #03050f;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  color: #ffffffd7;
+  margin: auto;
+  align-items: center;
+
+  p-galleria {
+    img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0px 0px 40px 40px #03050f;
     }
   }
 }
