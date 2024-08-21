@@ -76,16 +76,4 @@
   </div>
 </div>
 <!-- <app-project-slider></app-project-slider> -->
-<div class="slider">
-  <p-galleria
-    [value]="img"
-    [autoPlay]="true"
-    [showThumbnails]="false"
-    [transitionInterval]="3000"
-    [containerStyle]="{ 'max-width': '1000px' }"
-  >
-    <ng-template pTemplate="item" let-img>
-      <img [src]="img.URL" style="width: 100%; display: block" />
-    </ng-template>
-  </p-galleria>
-</div>
+<app-slider [GalleriaWidth]="width"></app-slider>

@@ -1,0 +1,13 @@
+<div class="slider">
+  <p-galleria
+    [value]="img"
+    [autoPlay]="true"
+    [showThumbnails]="false"
+    [transitionInterval]="3000"
+    [containerStyle]="{ 'max-width': '{{GalleriaWidth}}' }"
+  >
+    <ng-template pTemplate="item" let-img>
+      <img [src]="img.URL" style="width: 100%; display: block" />
+    </ng-template>
+  </p-galleria>
+</div>

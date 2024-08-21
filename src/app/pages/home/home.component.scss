@@ -269,7 +269,7 @@
       #03050ffe,
       #03050f
     ),
-    url("assets/banner.jpg");
+    url("/assets/banner.jpg");
 
   //remove the / later
   background-attachment: fixed;
@@ -310,27 +310,6 @@
       p {
         word-wrap: break-word;
       }
-    }
-  }
-}
-
-//slider
-.slider {
-  background-color: #03050f;
-  padding: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  color: #ffffffd7;
-  margin: auto;
-  align-items: center;
-
-  p-galleria {
-    img {
-      width: 100%;
-      border-radius: 20px;
-      box-shadow: 0px 0px 40px 40px #03050f;
     }
   }
 }
