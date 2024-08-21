@@ -14,7 +14,7 @@ interface GalleriaImage {
   styleUrl: './slider.component.scss',
 })
 export class SliderComponent {
-  @Input() public GalleriaWidth!: string;
+  @Input() public GalleriaWidth = "";  
   img: GalleriaImage[] = [];
   
   ngOnInit() {
@@ -29,8 +29,23 @@ export class SliderComponent {
         URL: 'assets/front-2.png',
       },
       {
-        URL: 'assets/front-3.png',
+        URL: 'assets/front-1.png',
       },
+      {
+        URL: 'assets/front-0.png',
+      },
+      {
+        URL: 'assets/front-2.png',
+      },
+      {
+        URL: 'assets/front-1.png',
+      },
+      {
+        URL: 'assets/front-0.png',
+      },
+      {
+        URL: 'assets/front-2.png',
+      }
     ];
   }
 

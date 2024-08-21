@@ -10,5 +10,5 @@ import { SliderComponent } from '../../components/slider/slider.component';
   styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent {
-  public width = '1000px';
+  public width = '1300px';
 }
